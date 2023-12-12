@@ -7,5 +7,6 @@ const express_1 = __importDefault(require("express"));
 const Project_controller_1 = require("./Project.controller");
 const projectRouter = express_1.default.Router();
 projectRouter.post('/create', Project_controller_1.projectController.createProject);
+projectRouter.get('/single/:id', Project_controller_1.projectController.getSingleProject);
 projectRouter.get('/all', Project_controller_1.projectController.getProject);
 exports.default = projectRouter;

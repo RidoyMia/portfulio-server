@@ -5,15 +5,24 @@ import projectRouter from "./app/module/Project/Project.route"
 
 
 const app : Application = express()
-app.use(cors({
-  origin: ['http://localhost:5173','https://car-pats-client.vercel.app'],
-  credentials: true,
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+// app.use(cors({
+//   origin: ['http://localhost:5173'],
+//   credentials: true,
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 
-  allowedHeaders: 'Content-Type, accesstoken',
+//   allowedHeaders: 'Content-Type, accesstoken',
  
   
-}))
+// }))
+const corsOptions = {
+  origin: '*',
+  credentials: true,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  allowedHeaders: ['Content-Type', 'accesstoken'],
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json())
 app.use(express.urlencoded({
     extended : true

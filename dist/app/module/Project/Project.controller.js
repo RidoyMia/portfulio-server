@@ -38,6 +38,20 @@ const getProject = (req, res, next) => __awaiter(void 0, void 0, void 0, functio
         });
     }
 });
+const getSingleProject = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const id = req.params.id;
+        const result = yield Project_model_1.ProjectModel.findById(id);
+        res.status(200).send({
+            result
+        });
+    }
+    catch (error) {
+        res.status(400).send({
+            message: 'something went wrong'
+        });
+    }
+});
 exports.projectController = {
-    createProject, getProject
+    createProject, getProject, getSingleProject
 };
