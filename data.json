@@ -1,0 +1,24 @@
+[
+    {
+        "name" : "Car parts ",
+        "picture" : "https://i.postimg.cc/k4MJwDRg/screencapture-car-pats-client-vercel-app-2023-12-11-21-32-25.png",
+        "descriptions" : "This is car-parts website.This main service is repairing car.User can  book service and also can order some products.User can pay with ssl commerce likes Bkash,Nagad and more payment methods.Only admin can add services and product .If admin want to modify then he able to modify all products and services. Implemented different Dashboard for user and admin",
+        "live" : "https://car-pats-client.vercel.app",
+        "client" : "https://github.com/RidoyMia/car-pats-client",
+        "server" : "https://github.com/RidoyMia/car-parts-server"
+    },{
+        "name" : "Red-Onion ",
+        "picture" : "https://i.postimg.cc/SRVPyNgj/screencapture-red-onion-client-vercel-app-2023-12-11-21-31-30.png",
+        "descriptions" : "This is a Red-onion website.In this website managae an resturant foods .User can order foods.Admin can add product and also modified theire all foods.also implement here jwt authorization systemm .Without valid  token no one can see their products",
+        "live" : "https://red-onion-client.vercel.app",
+        "client" : "https://github.com/RidoyMia/red-onion-client",
+        "server" : "https://github.com/RidoyMia/red-onion-server"
+    },{
+        "name" : "shopMy ",
+        "picture" : "https://i.postimg.cc/595FNFb6/screencapture-eccomerce-client-krlw-vercel-app-2023-12-11-21-30-22.png",
+        "descriptions" : "THis is a Eccomerce website.Their have three role like normal user,seller and Admin.Their have different dashboard systeem.User can order any product. And can sort by price range and also price high to low and Low to High. Seller can add product and also can modify their products.also can see their total selling product and total income",
+        "live" : "https://eccomerce-client-krlw.vercel.app",
+        "client" : "https://github.com/RidoyMia/eccomerce-client",
+        "server" : "https://github.com/RidoyMia/eccomerce-server"
+    }
+]
