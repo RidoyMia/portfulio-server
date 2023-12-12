@@ -27,10 +27,22 @@ const getProject = async(req:Request,res:Response,next:NextFunction) =>{
       })
     }
   }
-
+const getSingleProject = async(req:Request,res:Response,next:NextFunction) =>{
+    try {
+        const id = req.params.id;
+        const result = await ProjectModel.findById(id);
+        res.status(200).send({
+            result
+        })
+    } catch (error) {
+        res.status(400).send({
+            message : 'something went wrong'
+        })
+    }
+}
 
 
 
 export const projectController = {
-    createProject,getProject
+    createProject,getProject,getSingleProject
 }
